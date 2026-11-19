@@ -24,9 +24,7 @@ def validate(values):
         if not values.get(key):
             errors.append(f"{key} is missing or empty")
     return errors
-    # Return useful errors naming keys, not secret values.
-
-    raise NotImplementedError("Complete the configuration contract")
+    
 
 def load(path):
     values = {}
